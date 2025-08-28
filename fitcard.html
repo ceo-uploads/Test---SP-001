@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitcard PDF Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Fitcard Medical Report Generator</h1>
+
+        <form id="pdfForm" class="form-grid">
+            <label>Medical center name <input type="text" id="centerName" required></label>
+            <label>G.H.C. Code No. <input type="text" id="ghc" required></label>
+            <label>GCC Slip No. <input type="text" id="gcc" required></label>
+            <label>Date examined <input type="date" id="examDate" required></label>
+            <label>Report expiry date <input type="date" id="expiryDate" required></label>
+            <label>Name <input type="text" id="name" required></label>
+            <label>Marital status <input type="text" id="marital" required></label>
+            <label>Passport No <input type="text" id="passportNo" required></label>
+            <label>Age <input type="number" id="age" required></label>
+            <label>Gender <input type="text" id="gender" required></label>
+            <label>Passport expiry date <input type="date" id="passportExpiry" required></label>
+            <label>Phone <input type="text" id="phone" required></label>
+            <label>Height (cm) <input type="number" id="height" required></label>
+            <label>Weight (kg) <input type="number" id="weight" required></label>
+            <label>BMI <input type="text" id="bmi" required></label>
+            <label>Nationality <input type="text" id="nationality" required></label>
+            <label>Travelling to <input type="text" id="travelTo" required></label>
+            <label>Profession <input type="text" id="profession" required></label>
+            <label>Candidate Photo <input type="file" id="photo" accept="image/*" required></label>
+
+            <button type="submit" class="btn">Generate PDF</button>
+        </form>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
